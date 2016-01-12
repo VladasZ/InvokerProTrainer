@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "EF69EE10DCAA28B6E6585EAEEE7329491823855F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EF69EE10DCAA28B6E6585EAEEE7329491823855F" : 0,
+    "03F122C4F9ECC1976D3C8B8E448CB8258D3DBFC8" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "8633024D-3874-4CAC-87B0-5E03031EC710",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EF69EE10DCAA28B6E6585EAEEE7329491823855F" : "InvokerProTrainer\/",
+    "03F122C4F9ECC1976D3C8B8E448CB8258D3DBFC8" : "InvokerProTrainer1"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "InvokerProTrainer1",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "InvokerProTrainer1.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/VladasZ\/InvokerProTrainer1.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03F122C4F9ECC1976D3C8B8E448CB8258D3DBFC8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/VladasZ\/InvokerProTrainer.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EF69EE10DCAA28B6E6585EAEEE7329491823855F"
+    }
+  ]
+}

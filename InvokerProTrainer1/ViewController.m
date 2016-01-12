@@ -43,6 +43,8 @@
     self.buttonBackImg4.image = buttonBackResize;
     self.buttonBackImg5.image = buttonBackResize;
     
+    
+    
 
  
 }
@@ -54,7 +56,7 @@
     
     sp3=sp2;
     sp2=sp1;
-    sp1 = [sender tag];
+    sp1 = (int)[sender tag];
     
     UIImage *sphereQuas = [UIImage imageNamed:@"dQuas"];
     UIImage *sphereWex = [UIImage imageNamed:@"dWex"];

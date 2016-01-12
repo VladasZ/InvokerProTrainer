@@ -16,6 +16,7 @@
 		8239901A1A509FC100EEB2FE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823990191A509FC100EEB2FE /* Images.xcassets */; };
 		8239901D1A509FC100EEB2FE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8239901B1A509FC100EEB2FE /* LaunchScreen.xib */; };
 		823990291A509FC100EEB2FE /* InvokerProTrainer1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 823990281A509FC100EEB2FE /* InvokerProTrainer1Tests.m */; };
+		826F77C71C3DB87500D03913 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 826F77C61C3DB87500D03913 /* HealthKit.framework */; };
 		82CFEE191A6189E60031C8EE /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 82CFEE121A6189E60031C8EE /* back.png */; };
 		82CFEE1A1A6189E60031C8EE /* dExort in Resources */ = {isa = PBXBuildFile; fileRef = 82CFEE131A6189E60031C8EE /* dExort */; };
 		82CFEE1B1A6189E60031C8EE /* dQuas in Resources */ = {isa = PBXBuildFile; fileRef = 82CFEE141A6189E60031C8EE /* dQuas */; };
@@ -62,6 +63,8 @@
 		823990221A509FC100EEB2FE /* InvokerProTrainer1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InvokerProTrainer1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		823990271A509FC100EEB2FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		823990281A509FC100EEB2FE /* InvokerProTrainer1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvokerProTrainer1Tests.m; sourceTree = "<group>"; };
+		826F77C61C3DB87500D03913 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		826F77C81C3DB87500D03913 /* InvokerProTrainer1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = InvokerProTrainer1.entitlements; sourceTree = "<group>"; };
 		82CFEE121A6189E60031C8EE /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		82CFEE131A6189E60031C8EE /* dExort */ = {isa = PBXFileReference; lastKnownFileType = file; path = dExort; sourceTree = "<group>"; };
 		82CFEE141A6189E60031C8EE /* dQuas */ = {isa = PBXFileReference; lastKnownFileType = file; path = dQuas; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826F77C71C3DB87500D03913 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +107,7 @@
 		823990001A509FC100EEB2FE = {
 			isa = PBXGroup;
 			children = (
+				826F77C61C3DB87500D03913 /* HealthKit.framework */,
 				8239900B1A509FC100EEB2FE /* InvokerProTrainer1 */,
 				823990251A509FC100EEB2FE /* InvokerProTrainer1Tests */,
 				8239900A1A509FC100EEB2FE /* Products */,
@@ -121,6 +126,7 @@
 		8239900B1A509FC100EEB2FE /* InvokerProTrainer1 */ = {
 			isa = PBXGroup;
 			children = (
+				826F77C81C3DB87500D03913 /* InvokerProTrainer1.entitlements */,
 				82CFEE111A6189E60031C8EE /* Img */,
 				823990101A509FC100EEB2FE /* AppDelegate.h */,
 				823990111A509FC100EEB2FE /* AppDelegate.m */,
@@ -244,6 +250,12 @@
 				TargetAttributes = {
 					823990081A509FC100EEB2FE = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 2545JX4S8U;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					823990211A509FC100EEB2FE = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -439,9 +451,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InvokerProTrainer1/InvokerProTrainer1.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InvokerProTrainer1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -449,9 +465,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = InvokerProTrainer1/InvokerProTrainer1.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = InvokerProTrainer1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
